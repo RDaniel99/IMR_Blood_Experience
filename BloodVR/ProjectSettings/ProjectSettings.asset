@@ -125,7 +125,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 2196488649056411769, guid: 9417ce2926f06124b9df4f8dfd94dec1, type: 2}
+  - {fileID: 7129126076779205839, guid: 7ee7a81f00c8b9943a11a789dc5aacc3, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -327,7 +329,7 @@ PlayerSettings:
     m_Automatic: 1
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices:
     - None
     - OpenVR
@@ -341,7 +343,7 @@ PlayerSettings:
     m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: Windows Store Apps
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices:
     - WindowsMR
   - m_BuildTarget: PS4
