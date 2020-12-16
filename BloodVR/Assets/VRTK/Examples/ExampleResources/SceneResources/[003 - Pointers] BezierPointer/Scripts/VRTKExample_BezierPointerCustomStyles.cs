@@ -1,5 +1,10 @@
 ﻿namespace VRTK.Examples
 {
+    using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+    using UnityEngine;
     using UnityEngine;
 
     public class VRTKExample_BezierPointerCustomStyles : VRTKExample_BezierPointerChanger
@@ -10,22 +15,14 @@
         public GameObject cursorPrefab;
         public GameObject validLocationPrefab;
         public GameObject invalidLocationPrefab;
-
+        public Text scoreUI;
+        public int score;
+        public int correct;
         protected override void StyleRenderer(VRTK_BezierPointerRenderer renderer)
         {
-            if (renderer != null)
-            {
-                ResetRenderer(renderer);
-                renderer.gameObject.SetActive(false);
-                renderer.rescaleTracer = true;
-                renderer.validCollisionColor = validLocationColor;
-                renderer.invalidCollisionColor = invalidLocationColor;
-                renderer.customTracer = tracerPrefab;
-                renderer.customCursor = cursorPrefab;
-                renderer.validLocationObject = validLocationPrefab;
-                renderer.invalidLocationObject = invalidLocationPrefab;
-                renderer.gameObject.SetActive(true);
-            }
+                score=int.Parse(scoreUI.text);
+            score=score+correct;
+            scoreUI.text=score.ToString();
         }
     }
 }
