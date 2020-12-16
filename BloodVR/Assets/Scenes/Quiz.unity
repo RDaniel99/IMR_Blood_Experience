@@ -1265,9 +1265,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 365605893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e2686e5b5176c45b745fec6077e030, type: 3}
+  m_Script: {fileID: 11500000, guid: cd04afaed7df39a44be954c539ddbce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 1179307758}
+  answer1: {fileID: 1338351395}
+  answer2: {fileID: 1934738885}
+  answer3: {fileID: 1792535907}
+  scoreUI: {fileID: 365605895}
+  score: 0
 --- !u!1 &451394655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1825,8 @@ MonoBehaviour:
   scoreUI: {fileID: 365605895}
   score: 0
   correct: 1
+  cont: {fileID: 0}
+  txt: {fileID: 365605893}
 --- !u!1 &694846225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,6 +2094,8 @@ MonoBehaviour:
   scoreUI: {fileID: 365605895}
   score: 0
   correct: -1
+  cont: {fileID: 0}
+  txt: {fileID: 365605893}
 --- !u!65 &753551156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3414,6 +3424,8 @@ MonoBehaviour:
   scoreUI: {fileID: 365605895}
   score: 0
   correct: -1
+  cont: {fileID: 0}
+  txt: {fileID: 365605893}
 --- !u!1 &1130781367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,7 +3711,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Miastenia gravis poate fi explicata prin aparitia de:'
+  m_Text: Which type of cells fight viruses?
 --- !u!222 &1179307759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4112,7 +4124,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: anticorpi anti-TSH;
+  m_Text: Red cells
 --- !u!222 &1338351396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6153,7 +6165,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: anticorpi anti Acetilcolina;
+  m_Text: Black cells
 --- !u!222 &1792535908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6610,7 +6622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: anticorpi anti- receptor pentru Acetilcolina;
+  m_Text: White cells
 --- !u!222 &1934738886
 CanvasRenderer:
   m_ObjectHideFlags: 0

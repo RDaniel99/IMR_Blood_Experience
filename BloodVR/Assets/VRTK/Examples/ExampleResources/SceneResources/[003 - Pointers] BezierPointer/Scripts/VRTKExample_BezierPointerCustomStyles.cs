@@ -18,11 +18,12 @@ using UnityEngine.UI;
         public Text scoreUI;
         public int score;
         public int correct;
+                public QuizController cont;
+        public GameObject txt;
         protected override void StyleRenderer(VRTK_BezierPointerRenderer renderer)
         {
-                score=int.Parse(scoreUI.text);
-            score=score+correct;
-            scoreUI.text=score.ToString();
+            cont=txt.GetComponent<QuizController>();
+            cont.changeScore(correct);
         }
     }
 }
