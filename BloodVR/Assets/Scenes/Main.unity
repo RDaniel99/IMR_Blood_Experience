@@ -758,6 +758,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1522336308}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &333301829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333301828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a02a9c1b2a6454483c07660a7e5f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &333301832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5586,6 +5598,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 28f9943a60cd68140807918c6274f113,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28f9943a60cd68140807918c6274f113,
         type: 3}
